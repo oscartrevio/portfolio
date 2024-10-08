@@ -85,7 +85,7 @@ const spaceMono = Space_Mono({
 
 const instument = Instrument_Serif({
 	subsets: ["latin"],
-	style: "italic",
+	style: ["normal", "italic"],
 	weight: ["400"],
 	variable: "--font-instrument-serif",
 });

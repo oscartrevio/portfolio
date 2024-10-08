@@ -53,9 +53,9 @@ export default function Home() {
 								href='https://x.com/zzerou_/status/1812509007648846300'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='text-link items-center gap-0.5 hover:opacity-70 transition-all duration-200 ease-in-out inline'
+								className='text-link items-center gap-0.5 hover:opacity-70 transition-all duration-200 ease-in-out inline cursor-alias'
 							>
-								tweet <ExternalLink className='inline w-3 h-3' />
+								tweet
 							</a>{" "}
 						</span>{" "}
 						created with Figma.

@@ -133,7 +133,7 @@ export default function Home() {
 						className='text-lg font-bold mb-1 font-rounded flex gap-1 items-center tracking-tight'
 					>
 						Thoughts
-						<IoLink className='h-4 w-auto text-secondary-text' />
+						<IoLink className='h-4 w-auto text-secondary-text cursor-alias' />
 					</Link>
 					<BlogPostsPreview />
 				</section>
@@ -144,7 +144,7 @@ export default function Home() {
 						className='text-lg font-bold mb-1 font-rounded flex gap-1 items-center tracking-tight'
 					>
 						Craft
-						<IoLink className='h-4 w-auto text-secondary-text' />
+						<IoLink className='h-4 w-auto text-secondary-text cursor-alias' />
 					</Link>
 					<ProjectsPreview />
 				</section>
