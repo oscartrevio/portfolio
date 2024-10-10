@@ -13,7 +13,7 @@ export const metadata = {
 export default function Page() {
 	return (
 		<main className='max-w-screen-sm mx-auto px-6 py-20 relative min-h-screen font-sans scroll-smooth'>
-			<div className='flex justify-between mb-9 animate-blur-fade [animation-delay:calc(120ms*1)] items-center'>
+			<div className='flex justify-between mb-9 items-center'>
 				<span>
 					<h1 className='mb-0.5 text-2xl tracking-tight font-rounded font-extrabold text-primary-text'>
 						Craft
@@ -34,7 +34,7 @@ export default function Page() {
 				</Button>
 			</div>
 
-			<section className='animate-blur-fade [animation-delay:calc(120ms*2)]'>
+			<section>
 				<Projects />
 			</section>
 		</main>

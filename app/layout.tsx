@@ -4,6 +4,7 @@ import {
 	Instrument_Serif,
 	Inter,
 	JetBrains_Mono,
+	Newsreader,
 	Space_Mono,
 } from "next/font/google";
 import localFont from "next/font/local";
@@ -16,15 +17,10 @@ import {
 	Activity,
 	Component,
 	HomeIcon,
-	Mail,
-	Package,
-	ScrollText,
-	SunMoon,
 	Pickaxe,
 	Bookmark,
 	BookOpen,
 } from "lucide-react";
-import Link from "next/link";
 
 const data = [
 	{
@@ -82,11 +78,11 @@ const spaceMono = Space_Mono({
 	variable: "--font-space-mono",
 });
 
-const instument = Instrument_Serif({
+const newsreader = Newsreader({
 	subsets: ["latin"],
-	style: ["normal", "italic"],
-	weight: ["400"],
-	variable: "--font-instrument-serif",
+	display: "swap",
+	style: "italic",
+	variable: "--font-newsreader",
 });
 
 const openRunde = localFont({
@@ -151,7 +147,7 @@ export default function RootLayout({
 						openRunde.variable,
 						jetBrainsMono.variable,
 						spaceMono.variable,
-						instument.variable
+						newsreader.variable
 					)}
 				>
 					<div className='pointer-events-none fixed left-0 top-0 z-50 h-32 w-full'>

@@ -14,7 +14,7 @@ module.exports = {
 			rounded: [
 				"SFRounded, ui-rounded, SF Pro Rounded, var(--font-open-runde)",
 			],
-			instrument: ["var(--font-instrument-serif)"],
+			serif: ["var(--font-newsreader)"],
 		},
 		extend: {
 			animation: {

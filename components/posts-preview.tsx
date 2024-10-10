@@ -20,10 +20,10 @@ export function BlogPostsPreview() {
 			{previewBlogs.map((post) => (
 				<Link
 					key={post.slug}
-					className='flex items-center mb-1 hover:bg-accent rounded-xl py-2.5 px-2 -mx-2 transition-all duration-300 will-change-auto justify-between'
+					className='flex items-center mb-1 hover:bg-accent rounded-xl py-2.5 px-2 -mx-2 transition-all duration-300 ease-in-out will-change-auto justify-between tracking-tight'
 					href={`/thoughts/${post.slug}`}
 				>
-					<p className='text-primary-text tracking-tight font-rounded font-medium text-sm flex flex-col'>
+					<p className='text-primary-text font-rounded font-medium flex flex-col'>
 						<span className='font-rounded font-semibold'>
 							{post.metadata.title}
 						</span>

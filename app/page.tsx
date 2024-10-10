@@ -142,14 +142,22 @@ export default function Home() {
 				</section>
 
 				<section className='my-9 animate-blur-fade [animation-delay:calc(120ms*1)]'>
-					<h3 className='mb-1 font-rounded font-bold text-lg text-primary-text tracking-tight flex gap-1 items-center'>
-						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded'>
+					{/* <h3 className='mb-1 font-rounded font-bold text-lg text-primary-text tracking-tight flex gap-1 items-center'>
+						<div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded'>
 							<Fingerprint className='w-auto h-3' />
-						</div> */}
+						</div>
 						About me
-					</h3>
-					<div className='font-rounded font-medium text-sm text-secondary-text tracking-tight text-balance'>
-						{generalData.about}
+					</h3> */}
+					<div className='font-rounded font-medium text-secondary-text tracking-tight text-balance'>
+						<span className='font-serif font-medium'>
+							Crafting seamless digital experiences.
+						</span>{" "}
+						Designing intuitive, human-centered interfaces. Obsessed with
+						simplicity, innovation, and the smallest details.
+						<div className='mt-2'>
+							On a mission to push boundaries and shape the future of
+							technology. Computer Science student from Mexico.
+						</div>
 					</div>
 				</section>
 
@@ -162,7 +170,7 @@ export default function Home() {
 				<section className='my-9 animate-blur-fade [animation-delay:calc(120ms*2)]'>
 					<Link
 						href={"/thoughts"}
-						className='text-lg font-bold mb-1 font-rounded flex gap-1 items-center tracking-tight'
+						className='font-extrabold mb-1 font-rounded flex gap-1 items-center tracking-tight text-lg'
 					>
 						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded'>
 							<FaHammer className='w-auto h-3' />
@@ -176,7 +184,7 @@ export default function Home() {
 				<section className='my-9 animate-blur-fade [animation-delay:calc(120ms*3)]'>
 					<Link
 						href={"/craft"}
-						className='text-lg font-bold mb-1 font-rounded flex gap-1 items-center tracking-tight'
+						className='font-extrabold mb-1 font-rounded flex gap-1 items-center tracking-tight text-lg'
 					>
 						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded leading-none'>
 							<Hammer className='w-auto h-3' />
@@ -188,7 +196,7 @@ export default function Home() {
 				</section>
 
 				<section className='my-9 text-sm animate-blur-fade [animation-delay:calc(120ms*4)]'>
-					<h3 className='mb-1 text-primary-text font-rounded font-bold tracking-tight text-lg'>
+					<h3 className='mb-1 text-primary-text font-rounded font-extrabold tracking-tight text-lg'>
 						Contact
 					</h3>
 					<div className='flex flex-col gap-4'>
