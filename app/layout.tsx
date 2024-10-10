@@ -12,7 +12,6 @@ import Providers from "./providers";
 import { generalData } from "@/data/general";
 import type { Metadata } from "next";
 import { cn } from "./lib/utils";
-import { Dock, DockIcon, DockItem, DockLabel } from "@/components/dock";
 import {
 	Activity,
 	Component,

@@ -4,11 +4,29 @@ import { generalData } from "@/data/general";
 import { contentData } from "@/data/content";
 import type { Content } from "@/data/content";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Fingerprint, Hammer } from "lucide-react";
 import { IoLink } from "react-icons/io5";
 import { BlogPostsPreview } from "@/components/posts-preview";
 import { ProjectsPreview } from "@/components/projects-preview";
 import { ConfettiButton } from "@/components/confetti";
+import {
+	Activity,
+	Component,
+	HomeIcon,
+	Mail,
+	Package,
+	ScrollText,
+	SunMoon,
+	Pickaxe,
+	Bookmark,
+	BookOpen,
+} from "lucide-react";
+import {
+	FaCompassDrafting,
+	FaFaceSmile,
+	FaFingerprint,
+	FaHammer,
+} from "react-icons/fa6";
 
 type ContentProps = Content;
 
@@ -47,7 +65,7 @@ export default function Home() {
 				{/* NAME SECTION */}
 				<section className='flex items-center overflow-visible animate-blur-fade justify-between'>
 					<div className='flex'>
-						<ConfettiButton
+						{/* <ConfettiButton
 							asChild
 							options={{
 								particleCount: 15,
@@ -63,7 +81,7 @@ export default function Home() {
 								height={50}
 								className='object-cover mr-2 hover:scale-110 transition-transform duration-200 ease-in-out rounded-full cursor-help'
 							/>
-						</ConfettiButton>
+						</ConfettiButton> */}
 						<div className='overflow-visible'>
 							{/* <h1
 							className='mb-0.5 text-2xl tracking-tight font-rounded font-extrabold text-primary-text'
@@ -87,9 +105,20 @@ export default function Home() {
 						>
 							Oscar Treviño
 						</h1> */}
-							<h1 className='mb-0.5 text-2xl tracking-tight font-rounded font-extrabold text-primary-text'>
-								Oscar Treviño
-							</h1>
+
+							<ConfettiButton
+								asChild
+								options={{
+									particleCount: 15,
+									startVelocity: 20,
+									spread: 35,
+									scalar: 0.8,
+								}}
+							>
+								<h1 className='mb-0.5 text-2xl tracking-tight font-rounded font-extrabold text-primary-text'>
+									Oscar Treviño
+								</h1>
+							</ConfettiButton>
 							<p className='text-sm font-medium text-secondary-text font-rounded'>
 								{generalData.jobTitle}
 							</p>
@@ -113,7 +142,10 @@ export default function Home() {
 				</section>
 
 				<section className='my-9 animate-blur-fade [animation-delay:calc(120ms*1)]'>
-					<h3 className='mb-1 font-rounded font-bold text-lg text-primary-text tracking-tight'>
+					<h3 className='mb-1 font-rounded font-bold text-lg text-primary-text tracking-tight flex gap-1 items-center'>
+						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded'>
+							<Fingerprint className='w-auto h-3' />
+						</div> */}
 						About me
 					</h3>
 					<div className='font-rounded font-medium text-sm text-secondary-text tracking-tight text-balance'>
@@ -132,6 +164,9 @@ export default function Home() {
 						href={"/thoughts"}
 						className='text-lg font-bold mb-1 font-rounded flex gap-1 items-center tracking-tight'
 					>
+						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded'>
+							<FaHammer className='w-auto h-3' />
+						</div> */}
 						Thoughts
 						<IoLink className='h-4 w-auto text-secondary-text cursor-alias' />
 					</Link>
@@ -143,6 +178,9 @@ export default function Home() {
 						href={"/craft"}
 						className='text-lg font-bold mb-1 font-rounded flex gap-1 items-center tracking-tight'
 					>
+						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded leading-none'>
+							<Hammer className='w-auto h-3' />
+						</div> */}
 						Craft
 						<IoLink className='h-4 w-auto text-secondary-text cursor-alias' />
 					</Link>

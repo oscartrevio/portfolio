@@ -12,7 +12,7 @@ const FORMAT_H4 = "mt-8 scroll-m-20 text-xl font-semibold tracking-tight";
 const FORMAT_H5 = "mt-8 scroll-m-20 text-lg font-semibold tracking-tight";
 const FORMAT_H6 = "mt-8 scroll-m-20 text-base font-semibold tracking-tight";
 const FORMAT_P =
-	"[&:not(:first-child)]:mt-4 leading-5 font-rounded font-medium scroll-m-20";
+	"[&:not(:first-child)]:mt-4 leading-snug font-rounded font-medium scroll-m-20 tracking-tight";
 const FORMAT_UL = "my-6 ml-6 list-disc font-rounded font-medium scroll-m-20";
 const FORMAT_OL = "my-6 ml-6 list-decimal font-rounded font-medium scroll-m-20";
 const FORMAT_LI = "mt-2";

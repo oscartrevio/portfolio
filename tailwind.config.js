@@ -11,8 +11,9 @@ module.exports = {
 			sans: ["var(--font-inter)"],
 			display: ["var(--font-open-runde)"],
 			mono: ["var(--font-space-mono)"],
-			rounded:
-				"SFRounded, ui-rounded, SF Pro Rounded, system-ui, var(--font-open-runde)",
+			rounded: [
+				"SFRounded, ui-rounded, SF Pro Rounded, var(--font-open-runde)",
+			],
 			instrument: ["var(--font-instrument-serif)"],
 		},
 		extend: {
