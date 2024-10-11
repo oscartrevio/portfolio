@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { formatDate, getBlogPosts } from "@/app/thoughts/utils";
+import { getBlogPosts } from "@/app/thoughts/utils";
 import { format } from "date-fns";
-import { ExternalLink } from "lucide-react";
 
 export function BlogPostsPreview() {
 	let allBlogs = getBlogPosts();
@@ -34,7 +33,6 @@ export function BlogPostsPreview() {
 					</p>
 				</Link>
 			))}
-
 			{/* Show more link */}
 			{/* <div className='mt-1 text-left'>
 				<Link

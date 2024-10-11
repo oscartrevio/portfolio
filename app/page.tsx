@@ -83,29 +83,6 @@ export default function Home() {
 							/>
 						</ConfettiButton> */}
 						<div className='overflow-visible'>
-							{/* <h1
-							className='mb-0.5 text-2xl tracking-tight font-rounded font-extrabold text-primary-text'
-							data-marker='true'
-							style={{
-								display: "inline",
-								margin: "-0.120147em -0.235145em -0.179853em -0.264855em",
-								padding: "0.120147em 0.235145em 0.179853em 0.264855em",
-								borderRadius: "0.5em 0.3em",
-								backgroundImage:
-									"linear-gradient(85.16184485450792deg, color-mix(in srgb, rgb(0,170,255), transparent 50%), color-mix(in srgb, rgb(0,170,255), transparent 90%) 4%, color-mix(in srgb, rgb(0,170,255), transparent 70%) 96%, color-mix(in srgb, rgb(0,170,255), transparent 30%))",
-								backgroundPosition: "initial",
-								backgroundSize: "initial",
-								backgroundRepeat: "initial",
-								backgroundAttachment: "initial",
-								backgroundOrigin: "initial",
-								backgroundClip: "initial",
-								backgroundColor: "transparent",
-								WebkitBoxDecorationBreak: "clone",
-							}}
-						>
-							Oscar Treviño
-						</h1> */}
-
 							<ConfettiButton
 								asChild
 								options={{
@@ -142,13 +119,7 @@ export default function Home() {
 				</section>
 
 				<section className='my-9 animate-blur-fade [animation-delay:calc(120ms*1)]'>
-					{/* <h3 className='mb-1 font-rounded font-bold text-lg text-primary-text tracking-tight flex gap-1 items-center'>
-						<div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded'>
-							<Fingerprint className='w-auto h-3' />
-						</div>
-						About me
-					</h3> */}
-					<div className='font-rounded font-medium text-secondary-text tracking-tight text-balance'>
+					<div className='font-rounded font-medium text-primary-text tracking-tight text-balance'>
 						<span className='font-serif font-medium'>
 							Crafting seamless digital experiences.
 						</span>{" "}
@@ -172,9 +143,6 @@ export default function Home() {
 						href={"/thoughts"}
 						className='font-extrabold mb-1 font-rounded flex gap-1 items-center tracking-tight text-lg'
 					>
-						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded'>
-							<FaHammer className='w-auto h-3' />
-						</div> */}
 						Thoughts
 						<IoLink className='h-4 w-auto text-secondary-text cursor-alias' />
 					</Link>
@@ -186,9 +154,6 @@ export default function Home() {
 						href={"/craft"}
 						className='font-extrabold mb-1 font-rounded flex gap-1 items-center tracking-tight text-lg'
 					>
-						{/* <div className='text-xs w-6 h-6 rounded-full bg-[#369eff] flex items-center justify-center font-bold text-white font-rounded leading-none'>
-							<Hammer className='w-auto h-3' />
-						</div> */}
 						Craft
 						<IoLink className='h-4 w-auto text-secondary-text cursor-alias' />
 					</Link>
@@ -206,7 +171,6 @@ export default function Home() {
 									<p className='mr-2 max-w-[100px] w-full text-secondary-text font-rounded font-medium'>
 										{contact.label}
 									</p>
-
 									<div className='flex flex-col text-primary-text font-rounded font-medium'>
 										<Link
 											href={contact.href}

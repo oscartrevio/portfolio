@@ -21,7 +21,7 @@ export function ProjectsPreview() {
 			{previewPosts.map((post) => (
 				<Link
 					key={post.slug}
-					className='flex items-start mb-1 hover:bg-accent rounded-2xl py-2.5 px-2 -mx-2 transition-all duration-300 will-change-auto flex-col border border-accent'
+					className='flex items-start mb-1 hover:bg-accent rounded-2xl py-2.5 px-2 -mx-2 transition-all duration-300 will-change-auto flex-col border border-accent bg-secondary-bg'
 					href={`/craft/${post.metadata.slug}`}
 				>
 					{/* <Image
@@ -50,10 +50,9 @@ export function ProjectsPreview() {
 							width={100}
 							height={100}
 							alt={`${post.metadata.title} preview`}
-							className='h-full w-full object-cover aspect-video'
+							className='h-auto w-full object-cover aspect-video'
 						/>
 					</div>
-
 					<div className='flex justify-between items-center w-full p-1 tracking-tight'>
 						<p className='text-primary-text font-rounded font-medium text-sm flex flex-col'>
 							<span className='font-rounded font-semibold'>
