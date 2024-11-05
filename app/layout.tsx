@@ -138,7 +138,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<ServerThemeProvider attribute='class'>
+		<ServerThemeProvider attribute='class' defaultTheme='light' enableSystem>
 			<html lang='en'>
 				<body
 					className={cn(
@@ -168,22 +168,7 @@ export default function RootLayout({
 							}}
 						></div>
 					</div>
-					<Providers>
-						{children}
-						{/* <div className='pointer-events-none fixed inset-x-0 bottom-4 z-[100] mx-auto flex'>
-							<div className='pointer-events-auto relative mx-auto flex h-full items-center overflow-y-scroll rounded-xl bg-accent p-2 shadow-[rgba(142,140,152,0.2)_0px_0px_30px,rgba(219,216,224,0.2)_0px_0px_0px_1px] dark:shadow-[rgba(111,109,120,0.1)_0px_0px_30px,rgba(60,57,63,0.4)_0px_0px_0px_1px]'>
-								{data.map((item, index) => (
-									<Link
-										key={index}
-										href={item.href}
-										className='inline-flex cursor-pointer items-center justify-center p-2.5 rounded-xl transition-all duration-300'
-									>
-										{item.icon}
-									</Link>
-								))}
-							</div>
-						</div> */}
-					</Providers>
+					<Providers>{children}</Providers>
 					<div className='pointer-events-none fixed left-0 bottom-0 z-50 h-32 w-full rotate-180'>
 						{/* Light theme gradient */}
 						<div

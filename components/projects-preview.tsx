@@ -21,7 +21,7 @@ export function ProjectsPreview() {
 			{previewPosts.map((post) => (
 				<Link
 					key={post.slug}
-					className='flex items-start mb-1 hover:bg-accent rounded-2xl py-2.5 px-2 -mx-2 transition-all duration-300 will-change-auto flex-col border border-accent bg-secondary-bg'
+					className='flex items-start mb-1 hover:bg-accent rounded-2xl py-2.5 px-2 -mx-2 transition-all duration-300 will-change-auto flex-col border border-accent'
 					href={`/craft/${post.metadata.slug}`}
 				>
 					{/* <Image
