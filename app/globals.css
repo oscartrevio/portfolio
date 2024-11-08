@@ -9,6 +9,10 @@
 	scroll-behavior: unset !important;
 }
 
+.selection:bg-pixel-color {
+	background-color: #ff6347; /* Change this to match a pixel color from the GIF */
+}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
